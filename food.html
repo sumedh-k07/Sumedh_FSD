@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Restaurants in Pune</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+        .topnav {
+            background-color: #d9534f; /* Food-themed color */
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .topnav a {
+            float: left;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #c9302c;
+        }
+        .topnav a.active {
+            background-color: #c9302c;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .container h1 {
+            text-align: center;
+            color: #d9534f;
+            font-family: 'Georgia', serif;
+        }
+        .restaurant {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .restaurant:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .restaurant img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 20px;
+        }
+        .restaurant div {
+            flex: 1;
+        }
+        .restaurant h2 {
+            margin-top: 0;
+            color: #d9534f;
+        }
+        .restaurant p {
+            color: #555;
+        }
+        .speciality {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        @media screen and (max-width: 768px) {
+            .restaurant {
+                flex-direction: column;
+                text-align: center;
+            }
+            .restaurant:nth-child(even) {
+                flex-direction: column;
+            }
+            .restaurant img {
+                margin: 0 0 20px 0;
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="places.html">Places</a>
+        <a href="culture.html">Culture</a>
+        <a class="active" href="food.html">Food</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="container">
+        <h1>Famous Restaurants in Pune</h1>
+
+        <div class="restaurant">
+            <div>
+                <h2>Vaishali</h2>
+                <p>Vaishali is an iconic restaurant located on Fergusson College Road. Known for its delicious South Indian cuisine, especially the crispy dosas and refreshing filter coffee, Vaishali is a favorite hangout spot for students and families alike.</p>
+                <p><span class="speciality">Speciality:</span> Dosas and filter coffee.</p>
+            </div>
+            <img src="vaishali.jpg" alt="Vaishali">
+        </div>
+
+        <div class="restaurant">
+            <div>
+                <h2>Good Luck Café</h2>
+                <p>Good Luck Café, situated on Deccan Gymkhana, is one of Pune's oldest Irani cafes. It is renowned for its bun maska, Irani chai, and mouth-watering biryanis. The café has a nostalgic charm and is a must-visit for its old-world ambiance.</p>
+                <p><span class="speciality">Speciality:</span> Bun maska, Irani chai, and mouth-watering biryanis.</p>
+            </div>
+            <img src="goodluckcafe.jpg" alt="Good Luck Café">
+        </div>
+
+        <div class="restaurant">
+            <div>
+                <h2>Blue Nile</h2>
+                <p>Blue Nile, located near Pune Camp, is famous for its delectable biryanis and kebabs. This restaurant has been serving the people of Pune for decades and is known for its rich, flavorful Mughlai cuisine and spacious dining area.</p>
+                <p><span class="speciality">Speciality:</span> Biryanis and kebabs.</p>
+            </div>
+            <img src="bluenile.jpg" alt="Blue Nile">
+        </div>
+
+        <div class="restaurant">
+            <div>
+                <h2>German Bakery</h2>
+                <p>German Bakery, situated in Koregaon Park, is a popular spot for its wide variety of baked goods and continental dishes. Known for its cozy ambiance, this bakery offers everything from fresh bread and pastries to hearty breakfasts and savory snacks.</p>
+                <p><span class="speciality">Speciality:</span> Freshly made bakery items.</p>
+            </div>
+            <img src="germanbakery.jpg" alt="German Bakery">
+        </div>
+
+        <div class="restaurant">
+            <div>
+                <h2>Kayani Bakery</h2>
+                <p>Kayani Bakery, located on East Street, is famous for its legendary Shrewsbury biscuits and mawa cakes. Established in 1955, this bakery is an institution in Pune and is always bustling with customers eager to savor its freshly baked goods.</p>
+                <p><span class="speciality">Speciality:</span> Shrewsbury biscuits and mawa cakes.</p>
+            </div>
+            <img src="kayanibakery.jpg" alt="Kayani Bakery">
+        </div>
+    </div>
+</body>
+</html>

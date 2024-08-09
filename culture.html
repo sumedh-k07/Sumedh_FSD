@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture of Pune</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc; /* Light, neutral background */
+            color: #333;
+        }
+        .topnav {
+            background-color: #1e3a8a; /* Deep blue */
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .topnav a {
+            float: left;
+            color: #f9fafb; /* Off-white */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .topnav a:hover {
+            background-color: #2563eb; /* Lighter blue */
+            color: #fff;
+        }
+        .topnav a.active {
+            background-color: #3b82f6; /* Bright blue */
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* White for contrast */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        .container h1 {
+            text-align: center;
+            color: #1e3a8a; /* Deep blue */
+            font-family: 'Arial', sans-serif;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .culture {
+            background-color: #e5e7eb; /* Light gray */
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .culture:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .culture:hover {
+            background-color: #d1d5db; /* Slightly darker gray */
+            transform: scale(1.02);
+        }
+        .culture img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 0 20px;
+        }
+        .culture h2 {
+            margin-top: 0;
+            color: #1e3a8a; /* Deep blue */
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .culture p {
+            color: #4b5563; /* Medium gray */
+            line-height: 1.6;
+        }
+        @media screen and (max-width: 768px) {
+            .culture {
+                flex-direction: column;
+                text-align: center;
+            }
+            .culture:nth-child(even) {
+                flex-direction: column;
+            }
+            .culture img {
+                margin: 0 0 20px 0;
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="places.html">Places</a>
+        <a class="active" href="culture.html">Culture</a>
+        <a href="food.html">Food</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="container">
+        <h1>Unique Cultural Aspects of Pune</h1>
+
+        <div class="culture">
+            <img src="ganeshfestival.jpg" alt="Ganesh Festival">
+            <div>
+                <h2>Ganesh Festival</h2>
+                <p>The Ganesh Festival, also known as Ganesh Chaturthi, is one of the most important and celebrated festivals in Pune. The city is famous for its grand and elaborate public celebrations with huge statues of Lord Ganesha, vibrant processions, and cultural performances. The festival lasts for ten days and culminates with the immersion of the idols in water bodies.</p>
+            </div>
+        </div>
+
+        <div class="culture">
+            <div>
+                <h2>Shaniwarwada Dance Festival</h2>
+                <p>The Shaniwarwada Dance Festival is an annual cultural event held at the historic Shaniwarwada Fort. It showcases classical Indian dance forms performed by renowned artists. The festival provides a platform to promote traditional dance forms and celebrates the rich cultural heritage of Pune.</p>
+            </div>
+            <img src="shaniwarwadadancefestival.jpg" alt="Shaniwarwada Dance Festival">
+        </div>
+
+        <div class="culture">
+            <img src="kasbaganpati.jpg" alt="Sawari of Kasba Ganpati">
+            <div>
+                <h2>Sawari of Kasba Ganpati</h2>
+                <p>The Sawari of Kasba Ganpati is a unique tradition where the idol of Kasba Ganpati, considered the presiding deity of Pune, is taken out in a grand procession through the streets of the old city. This event marks the beginning of the Ganesh Festival in Pune and is attended by thousands of devotees and spectators.</p>
+            </div>
+        </div>
+
+        <div class="culture">
+            <div>
+                <h2>Pune International Film Festival (PIFF)</h2>
+                <p>The Pune International Film Festival (PIFF) is an annual film festival held in Pune, showcasing a diverse range of films from around the world. It aims to promote good cinema and provides a platform for filmmakers to showcase their work. The festival attracts cinephiles, filmmakers, and critics, and features screenings, workshops, and discussions.</p>
+            </div>
+            <img src="piff.jpg" alt="Pune International Film Festival">
+        </div>
+
+        <div class="culture">
+            <img src="bharatnatyamandir.jpg" alt="Bharat Natya Mandir">
+            <div>
+                <h2>Bharat Natya Mandir</h2>
+                <p>Bharat Natya Mandir is a historic theater in Pune known for its contribution to the performing arts. It hosts a variety of cultural events, including theater performances, classical music concerts, and dance recitals. The theater has been a cultural hub in Pune for decades and continues to promote traditional and contemporary performing arts.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
