@@ -58,7 +58,7 @@
             display: flex;
             flex-direction: column;
         }
-        form input, form textarea {
+        form input, form textarea, form select { /* Added select to style */
             margin-bottom: 10px;
             padding: 10px;
             font-size: 16px;
@@ -76,6 +76,19 @@
         }
         form button:hover {
             background-color: #45a049;
+        }
+        /* ID selectors */
+        #name {
+            border-color: #007bff; /* Blue border for name input */
+        }
+        #phone {
+            border-color: #007bff; /* Blue border for phone input */
+        }
+        #category {
+            border-color: #007bff; /* Blue border for dropdown */
+        }
+        #query {
+            border-color: #007bff; /* Blue border for textarea */
         }
     </style>
 </head>
@@ -95,9 +108,17 @@
             <p><strong>Phone:</strong> +91 12345 67890</p>
         </div>
         <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="tel" name="phone" placeholder="Your Phone Number" required>
-            <textarea name="query" rows="5" placeholder="Your Query" required></textarea>
+            <input type="text" id="name" name="name" placeholder="Your Name" required> <!-- Added ID -->
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required> <!-- Added ID -->
+            <!-- Dropdown Menu -->
+            <select id="category" name="category" required> <!-- Added ID -->
+                <option value="">Select a Category</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Customer Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea id="query" name="query" rows="5" placeholder="Your Query" required></textarea> <!-- Added ID -->
             <button type="submit">Submit</button>
         </form>
     </div>
