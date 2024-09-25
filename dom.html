@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page Example</title>
+    <style>
+        #dynamicContent {
+            color: blue;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            margin: 10px;
+            display: inline-block;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="pageTitle">Welcome to the Dynamic Web Page</h1>
+    <div id="dynamicContent">
+        <p>This is some dynamic content.</p>
+        <button id="changeTextBtn">Change Text</button>
+        <button id="changeColorBtn">Change Color</button>
+        <button id="changeImageBtn">Change Image</button>
+        <button id="addTextNodeBtn">Add Text Node</button>
+        <button id="deleteNodeBtn">Delete Node</button>
+    </div>
+
+    <img id="dynamicImage" src="https://via.placeholder.com/150" alt="Placeholder Image">
+
+    <div id="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        // Access elements
+        const changeTextBtn = document.getElementById('changeTextBtn');
+        const changeColorBtn = document.getElementById('changeColorBtn');
+        const changeImageBtn = document.getElementById('changeImageBtn');
+        const addTextNodeBtn = document.getElementById('addTextNodeBtn');
+        const deleteNodeBtn = document.getElementById('deleteNodeBtn');
+        const dynamicContent = document.getElementById('dynamicContent');
+        const dynamicImage = document.getElementById('dynamicImage');
+        const container = document.getElementById('container');
+
+        // Change text on button click
+        changeTextBtn.addEventListener('click', () => {
+            dynamicContent.querySelector('p').innerHTML = 'Text has been changed!';
+        });
+
+        // Change color on button click
+        changeColorBtn.addEventListener('click', () => {
+            dynamicContent.style.color = 'red';
+        });
+
+        // Change image source on button click
+        changeImageBtn.addEventListener('click', () => {
+            dynamicImage.src = 'https://via.placeholder.com/200';
+        });
+
+        // Add a text node on button click
+        addTextNodeBtn.addEventListener('click', () => {
+            const newText = document.createTextNode('This is a new text node.');
+            dynamicContent.appendChild(newText);
+        });
+
+        // Delete a node on button click
+        deleteNodeBtn.addEventListener('click', () => {
+            if (container.lastChild) {
+                container.removeChild(container.lastChild);
+            }
+        });
+
+        // Access and manipulate elements using getElementsByTagName and getElementsByClassName
+        const boxes = document.getElementsByClassName('box');
+        Array.from(boxes).forEach((box, index) => {
+            box.style.backgroundColor = index % 2 === 0 ? 'lightblue' : 'lightgreen';
+        });
+
+        const paragraphs = document.getElementsByTagName('p');
+        if (paragraphs.length > 0) {
+            paragraphs[0].style.fontSize = '18px';
+        }
+    </script>
+</body>
+</html>
